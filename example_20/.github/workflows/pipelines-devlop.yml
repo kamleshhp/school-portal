@@ -26,7 +26,7 @@ jobs:
 
       # Build and Test with Gradle
       - name: Run the Maven verify phase
-        run: mvn -B package --file pom.xml
+        run: mvn clean install
 
       # Configure AWS credentials
       - name: Configure AWS credentials
